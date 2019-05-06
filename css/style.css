@@ -78,6 +78,7 @@ li {
 }
 
 .landing-text {
+  position: relative;
   display: flex;
   flex: 0 1 40vw;
   min-height: 50vh;
@@ -92,9 +93,9 @@ li {
   font-family: 'Courgette', 'Roboto', sans-serif;
 }
 
-.landing p {
+/* .landing p {
   margin-top: 5rem;
-}
+} */
 
 .landing-image {
   background: url(https://source.unsplash.com/weekly?coding);
@@ -231,7 +232,16 @@ li {
 }
 
 @media only screen and (min-width: 700px) {
+
+  .landing-text-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .button {
+    margin: .5rem;
     padding: 1rem 2.5rem;
   }
 
