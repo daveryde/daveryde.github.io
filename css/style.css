@@ -375,7 +375,7 @@ header {
 }
 
 @media only screen 
-  and (max-device-width: 825px) 
+  and (max-device-width: 846px) 
   and (orientation: landscape) {
     
     .landing h1 {
