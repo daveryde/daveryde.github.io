@@ -276,7 +276,7 @@ li {
 }
 
 @media only screen 
-  and (min-device-width: 750px) 
+  and (max-device-width: 825px) 
   and (orientation: landscape) {
     
     .landing h1 {
@@ -285,12 +285,16 @@ li {
     }
     
     .landing p {
-      font-size: .9rem;;
+      font-size: .8rem;;
     }
     
     .landing .button {
       display: block;
       margin-bottom: .5;
       padding: 0.5rem .5rem;
+    }
+
+    .landing .button {
+      font-size: .8rem;
     }
 }
