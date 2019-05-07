@@ -52,7 +52,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.4rem;
   line-height: 1.25;
   letter-spacing: -0.1rem;
 }
@@ -279,6 +279,7 @@ header {
 
 .bio {
   grid-area: bio;
+  padding: 2rem;
 }
 
 .job-1 {
@@ -291,6 +292,14 @@ header {
 
 .job-3 {
   grid-area: job-3;
+}
+
+.lg-heading {
+  margin: 5rem 0 0 5rem;
+}
+
+.sm-heading {
+  margin: 0 0 0 5rem;
 }
 
 /* Footer */
