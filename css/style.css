@@ -29,6 +29,7 @@ body {
 /* Typography */
 
 a {
+  color: #000;
   text-decoration: none;
 }
 
@@ -82,18 +83,18 @@ header {
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 30px;
+  top: 30px;
   background: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 50%;
   box-shadow: 0px 0px 5px 3px#000;
   cursor: pointer;
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .menu-btn.close {
-  transform: rotate(180deg);
+  transform: rotate(270deg);
 }
 
 .menu-btn .btn-line:nth-child(1) {
@@ -105,7 +106,7 @@ header {
   height: 3px;
   margin-bottom: 5px;
   background: #000;
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .menu-btn.close .btn-line:nth-child(1) {
@@ -125,12 +126,12 @@ header {
   top: 0;
   right: 0;
   width: 100vw;
-  height: 59.3vh;
+  height: 100vh;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
   visibility: hidden;
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .menu.show{
@@ -143,12 +144,12 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   margin: 0;
   background: rgba(225, 225, 225, .9);
   list-style: none;
   transform: translate3d(100%, 0, 0);
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .menu-nav.show {
@@ -157,7 +158,7 @@ header {
 
 .nav-item {
   transform: translate3d(600px, 0, 0);
-  transition: all 0.5s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .menu-nav.show .nav-item:nth-child(1) {
@@ -172,19 +173,28 @@ header {
   transition-delay: .4s;
 }
 
+.menu-nav.show .nav-item:nth-child(3) {
+  margin: 1rem 0;
+  transform: translate3d(0, 0, 0);
+  transition-delay: .5s;
+}
+
 .nav-link {
   color: #000;
   font-size: 2rem;
 }
 
 /* Landing */
+
 .landing {
+  margin-bottom: 1rem;
   background-color: #eee;
 }
 
 .landing-text {
   display: flex;
   flex: 0 1 40vw;
+  min-width: 40vw;
   min-height: 50vh;
   text-align: center; 
   padding: 0 1rem;
@@ -208,6 +218,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   flex: 0 1 60vw;
+  min-width: 60vw;
   min-height: 50vh;
   margin: 0;
 }
@@ -235,6 +246,7 @@ header {
 /* Projects */
 
 .projects {
+  margin-top: 4rem;
   background: #fff;
   display: flex;
   flex-flow: column nowrap;
@@ -295,7 +307,7 @@ header {
 }
 
 .lg-heading {
-  margin: 5rem 0 0 5rem;
+  
 }
 
 .sm-heading {
@@ -369,6 +381,10 @@ header {
     height: 100%;
   }
 
+  .landing-text {
+    min-width: 60vw;
+  }
+
   .landing-text,
   .landing-image {
     height: 100vh;
@@ -395,6 +411,10 @@ header {
 }
 
 @media only screen and (min-width: 700px) {
+  .landing-text {
+    min-width: 40vw;
+  }
+
   .landing h1 {
     font-size: 5rem;
   }
@@ -416,6 +436,24 @@ header {
   .showcase-icons img {
     padding: 1.5rem;
   }
+
+  .projects {
+    margin-top: 4rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .projects-box {
+    background: #eee;
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
 }
 
 @media only screen 
@@ -448,7 +486,20 @@ header {
     font-size: 3rem;
   }
 
-  .projects-box{
-    max-width: 60vw;
+  .projects {
+    margin-top: 4rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .projects-box {
+    background: #eee;
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
   }
 }

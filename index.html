@@ -30,14 +30,18 @@
     <nav class="menu">
       <ul class="menu-nav">
         <li class="nav-item">
-          <a href="/assets/webdev_resume.pdf" class="nav-link">Resume</a>
+          <a href="projects.html" class="nav-link">Projects</a>
         </li>
         <li class="nav-item">
           <a href="about.html" class="nav-link">About</a>
         </li>
+        <li class="nav-item">
+          <a href="/assets/webdev_resume.pdf" class="nav-link">Resume</a>
+        </li>
       </ul>
     </nav>
   </header>
+
     <!-- Landing Area -->
     <main id="main">
       <div class="landing">
@@ -49,109 +53,48 @@
               back-end technologies."
             </p>
             <a href="#projects" class="button">View Work</a>
-            <a href="https://github.com/daveryde" class="button" target="_blank">Github</a>
           </div>
         </div>
         <div class="landing-image"></div>
       </div>
+
+    <!-- Display projects section -->
+    <section id="projects">
+      <div class="projects">
+
+        <!-- Project Showcase -->
+
+        <!-- (Handlebars.js framework with MongoDB and nodeJS) Roster App Project -->
+        <div class="projects-box">
+          <img src="./img/roster_app.PNG" alt="React Client Panel Project" />
+            <a href="https://arcane-retreat-70868.herokuapp.com/" class="button" target="_blank">Live Demo</a>
+            <a href="https://github.com/daveryde/RosterApp-hbs" class="button" target="_blank">Github Code</a>
+      </div>
+
+        <!-- MERN Dev Connector Project -->
+        <div class="projects-box">
+            <img src="./img/devconnector_landing.PNG" alt="Dev Connector Project" />
+              <a href="https://quiet-reaches-39737.herokuapp.com/" class="button" target="_blank">Live Demo</a>
+              <a href="https://github.com/daveryde/devconnector" class="button" target="_blank">Github Code</a>
+        </div>
+
+        <!-- MERN Client Panel -->
+        <div class="projects-box">
+            <img src="./img/client_panel.PNG" alt="React Client Panel Project" />
+              <a href="https://reactclientpanel-eda28.firebaseapp.com/" class="button" target="_blank">Live Demo</a>
+              <a href="https://github.com/daveryde/react-clientpanel" class="button" target="_blank">Github Code</a>
+        </div>
+      </div>
+    </section>
     </main>
+    <footer class="footer">
+      <p>
+        Copyright &copy; 2019 
+        <a href="mailto:david_cordova@stu.centralaz.edu">David Cordova</a>
+      </p>
+    </footer>
 
-    <!-- Web technology logos section -->
-    <section id="technologies">
-      <div class="showcase">
-        <div class="showcase-icons">
-          <!-- ICONS -->
-          <img
-            src="https://img.icons8.com/color/96/000000/html-5.png"
-            alt="HTML5"
-          />
-          <img
-            src="https://img.icons8.com/color/96/000000/css3.png"
-            alt="CSS3"
-          />
-          <img
-            src="https://img.icons8.com/color/96/000000/javascript.png"
-            alt="Javascript"
-          />
-          <img
-            src="https://img.icons8.com/ios/100/000000/jquery-filled.png"
-            alt="jQuery"
-          />
-          <img
-            src="https://img.icons8.com/color/96/000000/nodejs.png"
-            alt="nodeJS"
-          />
-          <img src="https://img.icons8.com/color/96/000000/npm.png" alt="NPM" />
-          <img
-            src="https://img.icons8.com/color/96/000000/mongodb.png"
-            alt="MongoDB"
-          />
-          <img
-            src="https://img.icons8.com/ios/100/000000/mysql-logo-filled.png"
-            alt="mySQL"
-          />
-          <img
-            src="https://img.icons8.com/office/80/000000/php-logo.png"
-            alt="PHP"
-          />
-          <img
-            src="https://img.icons8.com/color/48/000000/python.png"
-            alt="Python"
-          />
-          <img
-            src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png"
-            alt="Java"
-          />
-          <img
-            src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
-            alt="C++"
-          />
-        </div>
-      </section>
-
-      <!-- Display projects section -->
-      <section id="projects">
-        <div class="projects">
-
-          <!-- Project Showcase -->
-
-          <!-- (Handlebars.js framework with MongoDB and nodeJS) Roster App Project -->
-          <div class="projects-box">
-            <img src="./img/roster_app.PNG" alt="React Client Panel Project" />
-              <a href="https://arcane-retreat-70868.herokuapp.com/" class="button" target="_blank">Live Demo</a>
-              <a href="https://github.com/daveryde/RosterApp-hbs" class="button" target="_blank">Github Code</a>
-        </div>
-
-          <!-- MERN Dev Connector Project -->
-          <div class="projects-box">
-              <img src="./img/devconnector_landing.PNG" alt="Dev Connector Project" />
-                <a href="https://quiet-reaches-39737.herokuapp.com/" class="button" target="_blank">Live Demo</a>
-                <a href="https://github.com/daveryde/devconnector" class="button" target="_blank">Github Code</a>
-          </div>
-
-          <!-- MERN Client Panel -->
-          <div class="projects-box">
-              <img src="./img/client_panel.PNG" alt="React Client Panel Project" />
-                <a href="https://reactclientpanel-eda28.firebaseapp.com/" class="button" target="_blank">Live Demo</a>
-                <a href="https://github.com/daveryde/react-clientpanel" class="button" target="_blank">Github Code</a>
-          </div>
-
-          <!-- MERN Client Panel Project -->
-          <div class="projects-box">
-              <img src="./img/mern_shoppinglist.PNG" alt="MERN Shopping List Project" />
-                <a href="https://morning-forest-14891.herokuapp.com/" class="button" target="_blank">Live Demo</a>
-                <a href="https://github.com/daveryde/mern_shopping_list" class="button" target="_blank">Github Code</a>
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <p>
-          Copyright &copy; 2019 
-          <a href="mailto:david_cordova@stu.centralaz.edu">David Cordova</a>
-        </p>
-      </footer>
-
-      <!-- Menu JavaScript -->
-      <script src="/js/menu.js"></script>
+    <!-- Menu JavaScript -->
+    <script src="/js/menu.js"></script>
   </body>
 </html>
