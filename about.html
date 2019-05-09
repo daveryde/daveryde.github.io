@@ -14,6 +14,7 @@
     gtag('config', 'UA-139735116-1');
     </script>
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -41,7 +42,7 @@
 
     <!-- Landing Area -->
     <main id="about">
-        <h1 class="lg-heading">About</h1>
+        <h1 class="lg-heading" data-aos="fade-right" data-aos-delay="500">About</h1>
         <h2 class="sm-heading">Let me tell you a few things ...</h2>
         <div class="about-info">
             <!-- Image section -->
@@ -86,6 +87,12 @@
     </p>
     </footer>
 
+    <!-- Animation on Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
     <!-- Menu JavaScript -->
     <script src="/js/menu.js"></script>
   </body>
