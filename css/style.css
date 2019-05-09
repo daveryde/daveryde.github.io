@@ -21,6 +21,7 @@ body {
   font-weight: 400;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   color: #222;
+  overflow-x: hidden
 }
 
 /* Grid */
@@ -225,6 +226,12 @@ header {
   font-size: 2rem;
 }
 
+/* Main */
+
+main {
+  min-height: 100%;
+}
+
 /* Landing */
 
 .landing {
@@ -320,7 +327,8 @@ header {
   'bio'
   'job-1' 
   'job-2' 
-  'job-3';
+  'job-3'
+  'job-4';
   grid-template-columns: 1frs;
 }
 
@@ -349,6 +357,41 @@ header {
   border-bottom: 1px solid #000;
 }
 
+.job {
+  position: relative;
+}
+
+.job:nth-child(odd):before {
+  content:'';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  transform: rotateZ(20deg) skewX(35deg) scale(.9);
+  box-shadow: 0px 1px 10px  #000;
+  z-index: -3;
+}
+
+.job:nth-child(even):after {
+  content:'';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  transform: rotateZ(-20deg) skewX(-35deg) scale(.9);
+  box-shadow: 0px 1px 10px  #000;
+  z-index: -3;
+}
+
+.job h3 {
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
 .job-1 {
   grid-area: job-1;
   padding: 2rem;
@@ -361,6 +404,11 @@ header {
 
 .job-3 {
   grid-area: job-3;
+  padding: 2rem;
+}
+
+.job-4 {
+  grid-area: job-4;
   padding: 2rem;
 }
 
@@ -589,7 +637,10 @@ header {
     grid-gap: 30px;
     grid-template-areas: 
     'bio-image bio bio'
-    'job-1 job-2 job-3';
+    'job-1 job-1 .'
+    '. job-2 job-2'
+    'job-3 job-3 .'
+    '. job-4 job-4';
     grid-template-columns: repeat(3, 1fr);
   }
 
