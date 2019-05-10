@@ -317,6 +317,11 @@ main {
   min-height: 100%
 }
 
+/* About Section */
+
+#about {
+  overflow: hidden;
+}
 
 .about-info {
   display: grid;
@@ -358,7 +363,6 @@ main {
 
 .job {
   position: relative;
-  overflow: hidden;
 }
 
 .job:nth-child(odd):before {
