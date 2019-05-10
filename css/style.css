@@ -21,12 +21,11 @@ body {
   font-weight: 400;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   color: #222;
-  overflow-x: hidden
 }
 
 /* Grid */
 .container {
-  width: 100%;
+  min-width: 100%;
 }
 
 /* Typography */
@@ -318,10 +317,11 @@ main {
   min-height: 100%
 }
 
-/* About Section */
+
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-column-gap: 30px;
+  grid-template-columns: 1fr;
   grid-template-areas: 
   'bio-image'
   'bio'
@@ -329,7 +329,6 @@ main {
   'job-2' 
   'job-3'
   'job-4';
-  grid-template-columns: 1frs;
 }
 
 .about-info p {
@@ -359,6 +358,7 @@ main {
 
 .job {
   position: relative;
+  overflow: hidden;
 }
 
 .job:nth-child(odd):before {
@@ -366,7 +366,7 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  min-width: 90%;
   height: 100%;
   background: #eee;
   transform: rotateZ(20deg) skewX(35deg) scale(.9);
@@ -379,7 +379,7 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  min-width: 90%;
   height: 100%;
   background: #eee;
   transform: rotateZ(-20deg) skewX(-35deg) scale(.9);
