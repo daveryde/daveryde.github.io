@@ -2,13 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Courgette');
 
+/* Adobe Personal Brand Fonts */
+@import url('https://use.typekit.net/pjn3soh.css');
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Macho', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -20,7 +24,8 @@ body {
   padding: 0;
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'Macho', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
   color: #222;
 }
 
@@ -39,6 +44,7 @@ a {
 p {
   margin-top: 0;
   margin-bottom: 2rem;
+  font-size: 1.2em;
 }
 
 h1,
@@ -50,7 +56,7 @@ h3 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1.2;
   letter-spacing: -0.1rem;
 }
@@ -68,7 +74,9 @@ h3 {
 }
 
 .subheading {
-  text-align: center;
+  padding: 1.5rem;
+  font-family: 'Circe Slab C';
+  font-weight: bold;
 }
 
 /* Images */
@@ -329,7 +337,14 @@ main {
 
 .landing h1 {
   margin-top: 5rem;
-  font-family: 'Courgette', 'Roboto', sans-serif;
+  font-family: 'Circe Slab A', 'Roboto', sans-serif;
+  font-weight: medium;
+}
+
+.landing p {
+  font-family: 'Macho', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
+  font-style: italic;
 }
 
 .landing-image {
@@ -468,36 +483,6 @@ main {
   opacity: 0.3;
   color: white;
 }
-/* 
-.detail:nth-child(odd):before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 90%;
-  height: 100%;
-  background: #eee;
-  -webkit-transform: rotateZ(20deg) skewX(35deg) scale(0.9);
-  transform: rotateZ(20deg) skewX(35deg) scale(0.9);
-  -webkit-box-shadow: 0px 1px 10px #000;
-  box-shadow: 0px 1px 10px #000;
-  z-index: -3;
-}
-
-.detail:nth-child(even):after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 90%;
-  height: 100%;
-  background: #eee;
-  -webkit-transform: rotateZ(-20deg) skewX(-35deg) scale(0.9);
-  transform: rotateZ(-20deg) skewX(-35deg) scale(0.9);
-  -webkit-box-shadow: 0px 1px 10px #000;
-  box-shadow: 0px 1px 10px #000;
-  z-index: -3;
-} */
 
 .detail h3 {
   border-bottom: 1px solid #000;
@@ -697,11 +682,11 @@ main {
   }
 
   .landing h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   .landing p {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
 
   .button {
