@@ -299,7 +299,7 @@ main {
 
 .landing {
   margin-bottom: 1rem;
-  background-color: #eee;
+  background-color: #ffd12e;
 }
 
 .landing-text {
@@ -333,8 +333,8 @@ main {
 }
 
 .landing img {
-  max-width: 250px;
-  height: auto;
+  width: auto;
+  max-height: 250px;
   margin-bottom: 3rem;
 }
 
