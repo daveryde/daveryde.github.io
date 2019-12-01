@@ -333,7 +333,7 @@ main {
 }
 
 .landing img {
-  max-width: 20rem;
+  max-width: 250px;
   height: auto;
   margin-bottom: 3rem;
 }
