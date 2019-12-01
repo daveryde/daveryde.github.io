@@ -343,10 +343,12 @@ main {
 .landing img {
   width: auto;
   max-height: 225px;
-  margin-bottom: 2.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .landing h1 {
+  margin-top: -0.5rem;
   margin-bottom: 3.1rem;
   font-family: 'Circe Slab A', 'Roboto', sans-serif;
   font-weight: medium;
@@ -355,7 +357,9 @@ main {
 .landing p {
   font-family: 'Macho', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
     sans-serif;
-  font-style: italic;
+  font-style: bolder;
+  margin-top: -1rem;
+  margin-bottom: 2.9rem;
 }
 
 .landing-image {
@@ -440,6 +444,10 @@ main {
 .projects-box img {
   max-width: 100%;
   min-height: 100%;
+}
+
+.projects-box a {
+  font-size: 1rem;
 }
 
 /* About Section */
@@ -554,7 +562,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-top: 2px solid #000;
+  border-top: 2px solid #f47920;
 }
 
 .footer-item {
@@ -589,8 +597,9 @@ main {
   min-width: 50vw;
   margin: 1rem 0;
   padding: 0.5rem 2rem;
-  border: 1px #ccc solid;
+  border: 4px #f47920 solid;
   border-radius: 50px;
+  font-size: 1rem;
   color: #000;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-out;
@@ -598,7 +607,7 @@ main {
 }
 
 .button:hover {
-  background: #fff;
+  background: #49c5ef;
 }
 
 /* Media Query */
@@ -757,7 +766,7 @@ main {
   }
 
   .landing p {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
 
   .landing .button {
@@ -765,16 +774,17 @@ main {
     margin-bottom: 0.5;
     padding: 0.5rem 0.5rem;
   }
-
-  .landing .button {
-    font-size: 0.8rem;
-  }
 }
 
 @media only screen and (min-width: 826px) {
   .nav-link {
     color: #000;
     font-size: 3rem;
+  }
+
+  .landing-text-inner a.button {
+    font-size: 1.5rem;
+    font-weight: bolder;
   }
 
   .projects {
@@ -804,6 +814,12 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    border: 3.5px solid #6cbf56;
+  }
+
+  .projects-box a {
+    font-size: 1.2rem;
+    font-weight: bolder;
   }
 
   .about-info {
