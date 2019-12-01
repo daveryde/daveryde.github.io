@@ -334,8 +334,8 @@ main {
 
 .landing img {
   width: auto;
-  max-height: 250px;
-  margin-bottom: 3rem;
+  max-height: 225px;
+  margin-bottom: 2.5rem;
 }
 
 .landing h1 {
@@ -685,7 +685,7 @@ main {
   }
 
   .landing h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .landing p {
