@@ -476,11 +476,11 @@ main {
 
 .bio-image {
   grid-area: bio-image;
-  width: 225px;
-  height: auto;
+  width: auto;
+  max-height: 250px;
   margin: 2rem auto;
   border: 2px solid #000;
-  border-radius: 100%;
+  border-radius: 120%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -492,17 +492,14 @@ main {
 .bio {
   grid-area: bio;
   padding: 2rem;
-}
-
-.bio h3 {
-  border-bottom: 1px solid #000;
+  border-top: 1px solid;
 }
 
 .detail {
   position: relative;
-  background: #000;
-  opacity: 0.3;
-  color: white;
+  background: #ffd12e;
+  border-radius: 50px;
+  margin-top: 1rem;
 }
 
 .detail h3 {
@@ -759,6 +756,17 @@ ul.footer-menu {
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+  }
+
+  .bio-image {
+    width: auto;
+    max-height: 350px;
+  }
+
+  .detail {
+    min-height: 30em;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .footer-item {
