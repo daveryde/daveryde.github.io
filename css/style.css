@@ -23,6 +23,7 @@ body {
   font-family: 'Macho', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
     sans-serif;
   color: #222;
+  overflow-x: hidden;
 }
 
 /* Grid */
@@ -74,13 +75,10 @@ h3 {
   padding: 1.5rem 1.5rem 0 1.5rem;
   font-family: 'Circe Slab C';
   font-weight: bold;
+  font-size: 2rem;
 }
 
-.subheading.center {
-  margin: 0;
-  padding: 1.5rem 1.5rem 0 1.5rem;
-  font-family: 'Circe Slab C';
-  font-weight: bold;
+.center {
   text-align: center;
 }
 
@@ -350,8 +348,8 @@ main {
 .landing h1 {
   margin-top: -0.5rem;
   margin-bottom: 3.1rem;
-  font-family: 'Circe Slab A', 'Roboto', sans-serif;
-  font-weight: medium;
+  font-family: circe-slab-a, serif;
+  /* font-weight: medium; */
 }
 
 .landing p {
@@ -703,16 +701,12 @@ ul.footer-menu {
 
   .landing img {
     width: auto;
-    max-height: 225px;
+    max-height: 200px;
     margin-bottom: 2.5rem;
   }
 
   .landing h1 {
-    font-size: 5rem;
-  }
-
-  .landing p {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .button {
@@ -779,7 +773,7 @@ ul.footer-menu {
   }
 }
 
-@media only screen and (max-device-width: 846px) and (orientation: landscape) {
+/* @media only screen and (max-device-width: 846px) and (orientation: landscape) {
   .landing h1 {
     margin-top: 0;
     font-size: 2.5rem;
@@ -794,7 +788,7 @@ ul.footer-menu {
     margin-bottom: 0.5;
     padding: 0.5rem 0.5rem;
   }
-}
+} */
 
 @media only screen and (min-width: 826px) {
   .nav-link {
@@ -802,9 +796,16 @@ ul.footer-menu {
     font-size: 3rem;
   }
 
+  .landing h1 {
+    font-size: 3rem;
+  }
+
   .landing-text-inner a.button {
-    font-size: 1.5rem;
-    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+
+  .subheading {
+    font-size: 3rem;
   }
 
   .projects {
@@ -839,7 +840,6 @@ ul.footer-menu {
 
   .projects-box a {
     font-size: 1.2rem;
-    font-weight: bolder;
   }
 
   .about-info {
