@@ -349,7 +349,7 @@ main {
   margin: 0 auto;
 }
 
-.landing img {
+.brand_logo {
   width: auto;
   max-height: 225px;
   margin-top: 1.2rem;
@@ -411,7 +411,7 @@ main {
   -ms-flex: 1 0px auto;
   flex: 1 0px auto;
   margin: 0 2.5rem;
-  padding: .8rem;
+  padding: 0.8rem;
 }
 
 /* Projects */
@@ -601,6 +601,16 @@ ul.footer-menu {
 
 /* Buttons */
 
+.icon {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+a .icon:hover {
+  transform: rotate3d(0, 0, 1, 1turn);
+}
+
 .button {
   display: block;
   min-width: 50vw;
@@ -714,7 +724,7 @@ ul.footer-menu {
     min-width: 40vw;
   }
 
-  .landing img {
+  .brand_logo {
     width: auto;
     max-height: 200px;
     margin-bottom: 2.5rem;
