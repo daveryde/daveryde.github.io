@@ -73,13 +73,24 @@ h3 {
 .subheading {
   margin: 0;
   padding: 1.5rem 1.5rem 0 1.5rem;
-  font-family: 'Circe Slab C';
+  font-family: circe-slab-c;
   font-weight: bold;
   font-size: 2rem;
 }
 
 .center {
   text-align: center;
+}
+
+.citation {
+  display: block;
+  width: 100%;
+  color: rgb(170, 170, 170);
+}
+
+.citation span {
+  padding: 0.5rem;
+  font-size: 0.6rem;
 }
 
 /* Images */
@@ -612,6 +623,10 @@ ul.footer-menu {
 
 /* Larger than phablet */
 @media only screen and (min-width: 550px) {
+  .citation span {
+    font-size: 0.7rem;
+  }
+
   .menu {
     position: absolute;
     top: 0;
@@ -791,6 +806,10 @@ ul.footer-menu {
 } */
 
 @media only screen and (min-width: 826px) {
+  .citation span {
+    font-size: 0.8rem;
+  }
+
   .nav-link {
     color: #000;
     font-size: 3rem;
