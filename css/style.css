@@ -798,23 +798,6 @@ a .icon:hover {
   }
 }
 
-/* @media only screen and (max-device-width: 846px) and (orientation: landscape) {
-  .landing h1 {
-    margin-top: 0;
-    font-size: 2.5rem;
-  }
-
-  .landing p {
-    font-size: 1.3rem;
-  }
-
-  .landing .button {
-    display: block;
-    margin-bottom: 0.5;
-    padding: 0.5rem 0.5rem;
-  }
-} */
-
 @media only screen and (min-width: 826px) {
   .citation span {
     font-size: 0.8rem;
@@ -889,5 +872,11 @@ a .icon:hover {
 
   .footer .footer-item {
     width: 20vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .projects-box {
+    min-height: 525px;
   }
 }
