@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.66246780.chunk.css",
+    "main.js": "/static/js/main.8f7ff2fe.chunk.js",
+    "main.js.map": "/static/js/main.8f7ff2fe.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d0605945.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
+    "static/js/2.421287b7.chunk.js": "/static/js/2.421287b7.chunk.js",
+    "static/js/2.421287b7.chunk.js.map": "/static/js/2.421287b7.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.66246780.chunk.css.map": "/static/css/main.66246780.chunk.css.map",
+    "static/js/2.421287b7.chunk.js.LICENSE.txt": "/static/js/2.421287b7.chunk.js.LICENSE.txt",
+    "static/media/ASUajax.91b8f337.PNG": "/static/media/ASUajax.91b8f337.PNG",
+    "static/media/ASUgeolocation.44c46055.PNG": "/static/media/ASUgeolocation.44c46055.PNG",
+    "static/media/asu_fixed_weblayout.a5962213.PNG": "/static/media/asu_fixed_weblayout.a5962213.PNG",
+    "static/media/asu_js_objects.b22d8f12.PNG": "/static/media/asu_js_objects.b22d8f12.PNG",
+    "static/media/bleach_fan_site.037cac00.PNG": "/static/media/bleach_fan_site.037cac00.PNG",
+    "static/media/dc_logo_blue.f70466d4.png": "/static/media/dc_logo_blue.f70466d4.png",
+    "static/media/devconnector_landing.7dae63ef.PNG": "/static/media/devconnector_landing.7dae63ef.PNG",
+    "static/media/javascript_validation_blog.f0068855.PNG": "/static/media/javascript_validation_blog.f0068855.PNG",
+    "static/media/movieapp.db93b69e.PNG": "/static/media/movieapp.db93b69e.PNG",
+    "static/media/mytunes.82c709c4.PNG": "/static/media/mytunes.82c709c4.PNG",
+    "static/media/roster_app.ab95cada.PNG": "/static/media/roster_app.ab95cada.PNG",
+    "static/media/selfie.3182b96f.jpg": "/static/media/selfie.3182b96f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0605945.js",
+    "static/js/2.421287b7.chunk.js",
+    "static/css/main.66246780.chunk.css",
+    "static/js/main.8f7ff2fe.chunk.js"
+  ]
+}
