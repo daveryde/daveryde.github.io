@@ -1,12 +1,13 @@
-import { useEffect } from "react";
+import { RefObject, useEffect } from "react";
 
-const UseDetectOutsideClick = (ref, handler) => {
+type AnyEvent = MouseEvent | TouchEvent;
+
+function UseDetectOutsideClick<T extends HTMLElement = HTMLElement> (ref: RefObject<T>, handler: (event: AnyEvent) => void) {
     // Hook
     useEffect(() => {
-        const listener = event => {
+        const listener = (event: AnyEvent) => {
             // Do nothing if clicking ref's element or descendent elements
-            if (!ref.current || ref.current.contains(event.target)) {
-                console.log("sheese")
+            if (!ref.current || ref.current.contains(event.target as Node)) {
                 return;
             }
 

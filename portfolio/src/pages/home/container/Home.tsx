@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 // Layout components
 import Landing from "../../../layout/components/Landing";

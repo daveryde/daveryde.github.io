@@ -1,7 +1,12 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const Nav = ({ menuRef, isMenuShowing, toggleMenu }) => {
+interface NavProps {
+    isMenuShowing: boolean;
+    toggleMenu: () => void;
+}
+
+const Nav = ({ isMenuShowing, toggleMenu }: NavProps) => {
     const location = useLocation();
 
     return (

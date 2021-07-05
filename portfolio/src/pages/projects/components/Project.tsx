@@ -1,11 +1,18 @@
 import React from "react";
 
+interface ProjectProps {
+    name: string;
+    image: string;
+    demoLink: string;
+    repoLink: string;
+}
+
 const Project = ({
     name,
     image,
     demoLink,
     repoLink
-}) => {
+}: ProjectProps) => {
     return (
         <div
             className="projects-box"

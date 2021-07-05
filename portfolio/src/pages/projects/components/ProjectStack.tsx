@@ -1,11 +1,9 @@
-import React from "react";
-
 const ProjectStack = () => {
     return (
         <div>
             <section id="technologies">
-                <div class="showcase">
-                    <div class="showcase-icons">
+                <div className="showcase">
+                    <div className="showcase-icons">
                         <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="HTML5" />
                         <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS3" />
                         <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="Javascript" />

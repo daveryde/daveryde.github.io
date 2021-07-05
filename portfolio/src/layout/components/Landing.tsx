@@ -1,8 +1,10 @@
-import React from "react";
-
 import brandLogo from "../../img/dc_logo_blue.png"
 
-const Landing = ({ textLabel }) => {
+interface LandingProps {
+    textLabel: string;
+}
+
+const Landing = ({ textLabel }: LandingProps) => {
     return (
         <div className="landing">
             <div className="landing-text">

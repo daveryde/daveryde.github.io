@@ -8,7 +8,7 @@ import useDetectOutsideClick from "./UseDetectOutsideClick";
 const Header = () => {
     const [isMenuShowing, setIsMenuShowing] = useState(false);
 
-    const menuRef = useRef();
+    const menuRef = useRef(null);
 
     useDetectOutsideClick(menuRef, () => setIsMenuShowing(false));
 
@@ -20,7 +20,7 @@ const Header = () => {
     const closeMenu = () => setIsMenuShowing(false);
 
     return (
-        <header ref={menuRef}>
+        <div ref={menuRef}>
             <div
                 className={`menu-btn ${isMenuShowing ? "close" : ""}`}
                 onClick={toggleMenu}>
@@ -30,8 +30,8 @@ const Header = () => {
             </div>
 
             {/* Navigation Menu */}
-            <Nav menu={menuRef} isMenuShowing={isMenuShowing} toggleMenu={toggleMenu} />
-        </header>
+            <Nav isMenuShowing={isMenuShowing} toggleMenu={toggleMenu} />
+        </div>
     );
 };
 

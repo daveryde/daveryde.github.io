@@ -2,11 +2,11 @@ import React from "react";
 
 const Landing = () => {
     return (
-        <div class="landing">
-            <div class="landing-text">
-                <div class="landing-text-inner">
+        <div className="landing">
+            <div className="landing-text">
+                <div className="landing-text-inner">
                     <img
-                        class="brand_logo"
+                        className="brand_logo"
                         src="./img/dc_logo_blue.png"
                         alt="Brand Image" />
                     <h1
@@ -20,11 +20,11 @@ const Landing = () => {
                     <a href="#projects">
                         <img
                             src="https://img.icons8.com/carbon-copy/100/f47920/circled-down-2.png"
-                            class="icon" />
+                            className="icon" />
                     </a>
                 </div>
             </div>
-            <div class="landing-image" />
+            <div className="landing-image" />
         </div>
     );
 };
