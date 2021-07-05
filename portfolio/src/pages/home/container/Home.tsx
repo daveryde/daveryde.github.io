@@ -7,6 +7,7 @@ import Landing from "../../../layout/components/Landing";
 import Showcase from "../components/Showcase";
 
 const Home = () => {
+
     useEffect(() => {
         window.scroll(0, 0);
     }, []);

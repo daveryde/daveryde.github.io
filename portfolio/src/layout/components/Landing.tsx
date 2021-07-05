@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import brandLogo from "../../img/dc_logo_blue.png"
 
 interface LandingProps {
@@ -21,12 +23,12 @@ const Landing = ({ textLabel }: LandingProps) => {
                     <p>
                         {textLabel ? `"${textLabel}"` : <></>}
                     </p>
-                    <a href="#projects">
+                    <Link to={{ hash: "projects" }}>
                         <img
                             className="icon"
                             src="https://img.icons8.com/carbon-copy/100/f47920/circled-down-2.png"
                             alt="icon" />
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="landing-image" />
