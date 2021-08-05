@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import resume from "../../assets/DavidCordovaResume.pdf";
 
 interface NavProps {
     isMenuShowing: boolean;
@@ -34,7 +35,8 @@ const Nav = ({ isMenuShowing, toggleMenu }: NavProps) => {
                 }
                 <li className="nav-item">
                     <a
-                        href="/assets/DavidCordovaResume.pdf"
+                        href={resume}
+                        rel="noreferrer"
                         className="nav-link"
                         onClick={toggleMenu}>
                         Resume
