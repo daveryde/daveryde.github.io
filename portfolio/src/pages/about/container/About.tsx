@@ -106,7 +106,7 @@ const About = () => {
                     </h6>
                     <p>
                         Made the decision and plan to earn a Bachelors in Internet and Web
-                        Development (2020) from ASU. A few months later, landed my first
+                        Development (2021) from ASU. A few months later, landed my first
                         job as a Full Stack Software Engineer for{" "}
                         <a href="https://www.cyberdive.co" target="_blank" rel="noreferrer"><u>Cyber Dive</u></a>,
                         helping parents gain peace of mind with their children using social media.
