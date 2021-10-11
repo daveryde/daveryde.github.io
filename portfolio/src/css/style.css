@@ -301,6 +301,14 @@ header {
   transition-delay: 0.5s;
 }
 
+.menu-nav.show .nav-item:nth-child(4) {
+  margin: 1rem 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
 .nav-link {
   color: #000;
   font-size: 2rem;

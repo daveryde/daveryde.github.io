@@ -15,8 +15,8 @@ const Footer = () => {
             </ul>
             <div className="footer-copyright">
                 <p>
-                    Copyright &copy; 2020
-          <a href="mailto:david_cordova@stu.centralaz.edu">David Cordova</a>
+                    Copyright &copy; 2020 &nbsp;&nbsp;
+                    <a href="mailto:davidhcordova411@gmail.com">David Cordova</a>
                 </p>
             </div>
         </footer>
