@@ -65,7 +65,7 @@ const WorkSlider: React.FC<ISliderProps> = (
 
                 <Styled.WorkLink>
                     <Styled.BigButton color={Styled.ThemeColor.baseRed}>
-                        <a href={demoLink}>
+                        <a href={demoLink} rel="noreferrer" target="_blank">
                             <Styled.Typography
                                 size={Styled.TypographySize.reg}
                                 style={{ display: 'flex' }}>
