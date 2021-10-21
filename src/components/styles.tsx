@@ -386,7 +386,7 @@ export const Image = styled.img.attrs((p: any) => ({
     filter: p.filter
 }))`
     width: 100%;
-    padding: 6rem 0 2rem 0;
+    padding: 0 0 3rem 0;
     object-fit: contain;
     ${p => p.filter &&
         `
@@ -456,6 +456,7 @@ export const AboutRight = styled.div`
 
 export const ConnectContainer = styled(WorkContainer)`
     background: ${ThemeColor.lightBlack};
+    min-height: 10vh;
 
     @media only screen and (min-width: 550px) {
         min-height: 30vh;
@@ -466,6 +467,7 @@ export const ConnectHeader = styled(WorkHeader)``;
 
 export const ConnectContent = styled(HeroContent)`
     padding: 2rem;
+    min-height: 10vh;
 
     @media only screen and (min-width: 550px) {
         min-height: 30vh;
@@ -476,7 +478,6 @@ export const ConnectContent = styled(HeroContent)`
 
 export const FooterContainer = styled.footer`
     background: ${ThemeColor.lightBlack};
-    min-height: 35vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: spaced-evenly;

@@ -62,7 +62,7 @@ const AboutSection = (props: Props) => {
                         I am enthusiastic in my voyage through the vast and intricate digital universe to find and implement solutions that generate harmony with human interactions.
                     </Styled.Typography>
 
-                    <Styled.SectionTitle>
+                    <Styled.SectionTitle style={{ padding: '2rem 0'}}>
                         <Styled.SmallRedLine />{'Skills & Tools'}
                     </Styled.SectionTitle>
                     <Styled.Typography
