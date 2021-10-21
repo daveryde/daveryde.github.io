@@ -26,7 +26,7 @@ export const showcaseProjects: IProjectList[] = [
         category: "React - Frontend App",
         description: "Data Table is an interactive and expandable ficticious candidate data table built in React JS which renders and optionally offers expand function to reveal a list of that candidate's applications.",
         image: dataTable,
-        demoLink: "https://ddavidcordova.dev/nimble-code-challenge/",
+        demoLink: "https://davidcordova.dev/nimble-code-challenge/",
         repoLink: "https://github.com/daveryde/nimble-code-challenge"
     },
     {
