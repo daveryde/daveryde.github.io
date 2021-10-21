@@ -7,10 +7,14 @@ const Footer = () => {
         <Styled.FooterContainer>
             <Styled.IconRow>
                 <Styled.Button hoverTheme>
-                    <FaLinkedin />
+                    <a href="https://www.linkedin.com/in/david-cordova-146b09174/" rel="noreferrer" target="_blank">
+                        <FaLinkedin />
+                    </a>
                 </Styled.Button>
                 <Styled.Button hoverTheme>
-                    <FaGithub />
+                    <a href="https://github.com/daveryde" rel="noreferrer" target="_blank">
+                        <FaGithub />
+                    </a>
                 </Styled.Button>
             </Styled.IconRow>
 
