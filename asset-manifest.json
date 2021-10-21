@@ -1,33 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.21da5292.chunk.css",
-    "main.js": "/static/js/main.3c3d3f69.chunk.js",
-    "main.js.map": "/static/js/main.3c3d3f69.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d0605945.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
-    "static/js/2.85ba60f4.chunk.js": "/static/js/2.85ba60f4.chunk.js",
-    "static/js/2.85ba60f4.chunk.js.map": "/static/js/2.85ba60f4.chunk.js.map",
+    "main.css": "/static/css/main.7176885d.chunk.css",
+    "main.js": "/static/js/main.076e5619.chunk.js",
+    "main.js.map": "/static/js/main.076e5619.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.db0644db.js",
+    "runtime-main.js.map": "/static/js/runtime-main.db0644db.js.map",
+    "static/js/2.54d916ec.chunk.js": "/static/js/2.54d916ec.chunk.js",
+    "static/js/2.54d916ec.chunk.js.map": "/static/js/2.54d916ec.chunk.js.map",
+    "static/js/3.763eacbd.chunk.js": "/static/js/3.763eacbd.chunk.js",
+    "static/js/3.763eacbd.chunk.js.map": "/static/js/3.763eacbd.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.21da5292.chunk.css.map": "/static/css/main.21da5292.chunk.css.map",
-    "static/js/2.85ba60f4.chunk.js.LICENSE.txt": "/static/js/2.85ba60f4.chunk.js.LICENSE.txt",
-    "static/media/ASUajax.91b8f337.PNG": "/static/media/ASUajax.91b8f337.PNG",
-    "static/media/ASUgeolocation.44c46055.PNG": "/static/media/ASUgeolocation.44c46055.PNG",
+    "static/css/main.7176885d.chunk.css.map": "/static/css/main.7176885d.chunk.css.map",
+    "static/js/2.54d916ec.chunk.js.LICENSE.txt": "/static/js/2.54d916ec.chunk.js.LICENSE.txt",
     "static/media/DavidCordovaResume.30fae924.pdf": "/static/media/DavidCordovaResume.30fae924.pdf",
-    "static/media/asu_fixed_weblayout.a5962213.PNG": "/static/media/asu_fixed_weblayout.a5962213.PNG",
-    "static/media/asu_js_objects.b22d8f12.PNG": "/static/media/asu_js_objects.b22d8f12.PNG",
-    "static/media/bleach_fan_site.037cac00.PNG": "/static/media/bleach_fan_site.037cac00.PNG",
-    "static/media/dc_logo_blue.f70466d4.png": "/static/media/dc_logo_blue.f70466d4.png",
-    "static/media/devconnector_landing.7dae63ef.PNG": "/static/media/devconnector_landing.7dae63ef.PNG",
-    "static/media/javascript_validation_blog.f0068855.PNG": "/static/media/javascript_validation_blog.f0068855.PNG",
-    "static/media/movieapp.db93b69e.PNG": "/static/media/movieapp.db93b69e.PNG",
-    "static/media/mytunes.82c709c4.PNG": "/static/media/mytunes.82c709c4.PNG",
-    "static/media/roster_app.ab95cada.PNG": "/static/media/roster_app.ab95cada.PNG",
-    "static/media/selfie.3182b96f.jpg": "/static/media/selfie.3182b96f.jpg"
+    "static/media/data_table.2dfe7610.png": "/static/media/data_table.2dfe7610.png",
+    "static/media/movieapp.db93b69e.png": "/static/media/movieapp.db93b69e.png",
+    "static/media/profile_pastel.5e4713f2.png": "/static/media/profile_pastel.5e4713f2.png",
+    "static/media/react_calculator.d1e564b5.png": "/static/media/react_calculator.d1e564b5.png",
+    "static/media/roster_app.ab95cada.png": "/static/media/roster_app.ab95cada.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d0605945.js",
-    "static/js/2.85ba60f4.chunk.js",
-    "static/css/main.21da5292.chunk.css",
-    "static/js/main.3c3d3f69.chunk.js"
+    "static/js/runtime-main.db0644db.js",
+    "static/js/2.54d916ec.chunk.js",
+    "static/css/main.7176885d.chunk.css",
+    "static/js/main.076e5619.chunk.js"
   ]
 }
