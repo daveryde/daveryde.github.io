@@ -313,7 +313,7 @@ export const HeroContent = styled.div`
     padding: 10rem 2rem 2rem 2rem;
 
     @media only screen and (min-width: 550px) {
-        padding-top: 13.5rem;
+        padding: 13.5rem 4rem 2rem 4rem;
     }
 `;
 
@@ -329,7 +329,11 @@ export const WorkContainer = styled(HeroContainer)`
 `;
 
 export const WorkHeader = styled.div`
-    padding: 2rem;    
+    padding: 2rem;
+    
+    @media only screen and (min-width: 550px) {
+        padding: 2rem 4rem;
+    }
 `;
 
 export const WorkContent = styled(HeroContent)`
@@ -337,6 +341,7 @@ export const WorkContent = styled(HeroContent)`
 
     @media only screen and (min-width: 550px) {
         flex-flow: row-reverse nowrap;
+        padding: 2rem 4rem;
     }
 `;
 
@@ -356,8 +361,13 @@ export const WorkLeft = styled.div`
         display: flex;
         margin-left: 2rem;
 
+        div {
+            margin-left: 2.4rem;
+        }
+
         img {
             width: 85%;
+            align-self: center;
         }
     }
 `;
@@ -426,10 +436,15 @@ export const AboutHeader = styled(WorkHeader)``;
 export const AboutContent = styled(HeroContent)`
     padding: 2rem;
 
+    img {
+        border-radius: 50%;
+    }
+
     @media only screen and (min-width: 550px) {
         display: flex;
         flex-flow: row-reverse nowrap;
         align-items: flex-start;
+        padding: 2rem 4rem;
     }
 `;
 
@@ -471,6 +486,7 @@ export const ConnectContent = styled(HeroContent)`
 
     @media only screen and (min-width: 550px) {
         min-height: 30vh;
+        padding: 2rem 4rem;
     }
 `;
 
@@ -488,5 +504,6 @@ export const FooterContainer = styled.footer`
         flex-flow: row-reverse nowrap;
         justify-content: space-between;
         align-items: center;
+        padding: 2rem 4rem;
     }
 `;
