@@ -18,7 +18,7 @@ const Navbar: React.FC<INavbarProps> = ({ sectionRefs, handleScroll }) => {
     return (
         <>
             <Styled.MobileNav>
-                <Scrollspy sectionRefs={sectionRefs} offset={-10}>
+                <Scrollspy sectionRefs={sectionRefs} offset={-100}>
                     {({ currentElementIndexInViewport }) => {
                         return (
                             <>
@@ -49,7 +49,7 @@ const Navbar: React.FC<INavbarProps> = ({ sectionRefs, handleScroll }) => {
                 </Styled.NavbarLeft>
 
                 <Styled.NavbarRight>
-                    <Scrollspy sectionRefs={sectionRefs} offset={-10}>
+                    <Scrollspy sectionRefs={sectionRefs} offset={-150}>
                         {({ currentElementIndexInViewport }) => {
                             return (
                                 <>
