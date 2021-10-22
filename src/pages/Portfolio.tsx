@@ -9,10 +9,10 @@ import WorkSection from '../components/WorkSection';
 
 const Portfolio = () => {
     const sectionRefs = [
-        useRef<HTMLDivElement | null>(null),
-        useRef<HTMLDivElement | null>(null),
-        useRef<HTMLDivElement | null>(null),
-        useRef<HTMLDivElement | null>(null)
+        useRef<HTMLElement | null>(null),
+        useRef<HTMLElement | null>(null),
+        useRef<HTMLElement | null>(null),
+        useRef<HTMLElement | null>(null)
     ];
 
     const handleScroll = (sectionRefIndex: number) => {
@@ -20,24 +20,24 @@ const Portfolio = () => {
     }
 
     return (
-        <>
+        <main>
             <Navbar
                 sectionRefs={sectionRefs}
                 handleScroll={handleScroll} />
-            <div ref={sectionRefs[0]}>
+            <section ref={sectionRefs[0]}>
                 <HeroSection handleScroll={handleScroll} />
-            </div>
-            <div ref={sectionRefs[1]}>
+            </section>
+            <section ref={sectionRefs[1]}>
                 <WorkSection />
-            </div>
-            <div ref={sectionRefs[2]}>
+            </section>
+            <section ref={sectionRefs[2]}>
                 <AboutSection handleScroll={handleScroll} />
-            </div>
-            <div ref={sectionRefs[3]}>
+            </section>
+            <section ref={sectionRefs[3]}>
                 <ConnectSection />
-            </div>
+            </section>
             <Footer />
-        </>
+        </main>
     )
 }
 

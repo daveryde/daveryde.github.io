@@ -301,7 +301,7 @@ export const NavbarItem = styled.span`
 
 // Hero Section
 
-export const HeroContainer = styled.section`
+export const HeroContainer = styled.article`
     min-height: 100vh;
     animation: 1.5s ${fadeIn} ease-out;
 `;
