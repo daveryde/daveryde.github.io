@@ -307,12 +307,13 @@ export const HeroContainer = styled.article`
 `;
 
 export const HeroContent = styled.div`
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     padding: 10rem 2rem 2rem 2rem;
 
     @media only screen and (min-width: 550px) {
+        min-height: 75vh;
         padding: 13.5rem 4rem 2rem 4rem;
     }
 `;
