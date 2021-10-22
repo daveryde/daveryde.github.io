@@ -227,7 +227,7 @@ export const DesktopNav = styled.nav`
         position: fixed;
         top: 0;
         width: 100%;
-        padding: 1rem 2rem 0 2rem;
+        padding: 1rem 4rem 0 4rem;
         display: flex;
         justify-content: space-between;
         background: ${ThemeColor.baseBlack};
