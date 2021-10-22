@@ -20,24 +20,26 @@ const Portfolio = () => {
     }
 
     return (
-        <main>
+        <>
             <Navbar
                 sectionRefs={sectionRefs}
                 handleScroll={handleScroll} />
-            <section ref={sectionRefs[0]}>
-                <HeroSection handleScroll={handleScroll} />
-            </section>
-            <section ref={sectionRefs[1]}>
-                <WorkSection />
-            </section>
-            <section ref={sectionRefs[2]}>
-                <AboutSection handleScroll={handleScroll} />
-            </section>
-            <section ref={sectionRefs[3]}>
-                <ConnectSection />
-            </section>
+            <main>
+                <section ref={sectionRefs[0]}>
+                    <HeroSection handleScroll={handleScroll} />
+                </section>
+                <section ref={sectionRefs[1]}>
+                    <WorkSection />
+                </section>
+                <section ref={sectionRefs[2]}>
+                    <AboutSection handleScroll={handleScroll} />
+                </section>
+                <section ref={sectionRefs[3]}>
+                    <ConnectSection />
+                </section>
+            </main>
             <Footer />
-        </main>
+        </>
     )
 }
 

@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, keyframes } from "styled-components";
+import styled, { createGlobalStyle, css, keyframes } from "styled-components";
 
 export enum ThemeColor {
     baseWhite = "rgb(255,255,255)",
@@ -249,7 +249,7 @@ export const BottomTab = styled.div.attrs((p: any) => ({
     transform: border-top 3s;
 
     ${p => p.active &&
-        `
+        css`
         color: ${ThemeColor.baseWhite};
         border-top: 2px solid ${ThemeColor.baseRedTransparent};
         `
@@ -400,7 +400,7 @@ export const Image = styled.img.attrs((p: any) => ({
     padding: 0 0 3rem 0;
     object-fit: contain;
     ${p => p.filter &&
-        `
+        css`
         filter: contrast(200%) brightness(75%) saturate(1);
         `
     }
