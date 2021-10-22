@@ -86,7 +86,7 @@ const fadeIn = keyframes`
 
 // General Buttons
 
-export const Button = styled.button.attrs((p: any) => ({
+export const Button = styled.button.attrs((p: { color: string, hoverTheme: boolean }) => ({
     color: p.color ? p.color : 'rgba(38, 42, 67, .8)',
     hoverTheme: p.hoverTheme
 }))`
@@ -109,7 +109,7 @@ export const Button = styled.button.attrs((p: any) => ({
     }
 `;
 
-export const BigButton = styled.button.attrs((p: any) => ({
+export const BigButton = styled.button.attrs((p: { color: string }) => ({
     color: p.color
 }))`
     width: 100%;
@@ -137,7 +137,7 @@ export const BigButton = styled.button.attrs((p: any) => ({
 
 // General Typography
 
-export const Heading = styled.span.attrs((p: any) => ({
+export const Heading = styled.span.attrs((p: { size: string }) => ({
     size: p.size
 }))`
     margin-top: 0;
@@ -145,7 +145,7 @@ export const Heading = styled.span.attrs((p: any) => ({
     font-weight: bold;
 `;
 
-export const Typography = styled.p.attrs((p: any) => ({
+export const Typography = styled.p.attrs((p: { size: string, spaced: boolean, color: string }) => ({
     size: p.size ? p.size : TypographySize.md,
     spaced: p.spaced,
     color: p.color ? p.color : ThemeColor.baseWhite
@@ -176,7 +176,7 @@ export const SectionTitle = styled.div`
 `;
 
 
-export const Bubble = styled.div.attrs((p: any) => ({
+export const Bubble = styled.div.attrs((p: { active: boolean }) => ({
     active: p.active
 }))`
     display: inline-block;
@@ -235,7 +235,7 @@ export const DesktopNav = styled.nav`
     }
 `;
 
-export const BottomTab = styled.div.attrs((p: any) => ({
+export const BottomTab = styled.div.attrs((p: { active: boolean }) => ({
     active: p.active
 }))`
     width: 25%;
@@ -273,7 +273,7 @@ export const NavbarRight = styled.div`
     }
 `;
 
-export const NavbarTab = styled.div.attrs((p: any) => ({
+export const NavbarTab = styled.div.attrs((p: { active: boolean }) => ({
     active: p.active
 }))`
 
@@ -393,7 +393,7 @@ export const WorkLink = styled.div`
     padding-bottom: 5rem;
 `;
 
-export const Image = styled.img.attrs((p: any) => ({
+export const Image = styled.img.attrs((p: { filter: boolean }) => ({
     filter: p.filter
 }))`
     width: 100%;
