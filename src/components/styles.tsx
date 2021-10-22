@@ -494,6 +494,7 @@ export const ConnectContent = styled(HeroContent)`
 // Footer
 
 export const FooterContainer = styled.footer`
+    min-height: 35vh;
     background: ${ThemeColor.lightBlack};
     display: flex;
     flex-flow: column nowrap;
