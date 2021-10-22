@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import { BiHomeAlt, BiUser } from 'react-icons/bi';
 import { FiBriefcase } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
