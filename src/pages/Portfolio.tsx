@@ -16,7 +16,6 @@ const Portfolio = () => {
     ];
 
     const handleScroll = (sectionRefIndex: number) => {
-        console.log('sectionIndex: ', sectionRefIndex)
         sectionRefs[sectionRefIndex].current?.scrollIntoView({ behavior: 'smooth' });
     }
 
