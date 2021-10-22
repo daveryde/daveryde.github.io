@@ -43,10 +43,8 @@ const Navbar: React.FC<INavbarProps> = ({ sectionRefs, handleScroll }) => {
 
             <Styled.DesktopNav>
                 <Styled.NavbarLeft>
-                    <Styled.NavbarItem>
-                        <Link to={{ hash: '' }}>
+                    <Styled.NavbarItem onClick={() => handleScroll(0)}>
                             <Styled.RedSpan>D</Styled.RedSpan>avid <Styled.RedSpan>C</Styled.RedSpan>ordova
-                        </Link>
                     </Styled.NavbarItem>
                 </Styled.NavbarLeft>
 
