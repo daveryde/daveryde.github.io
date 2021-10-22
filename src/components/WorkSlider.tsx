@@ -70,7 +70,7 @@ const WorkSlider: React.FC<ISliderProps> = (
                                 size={Styled.TypographySize.reg}
                                 style={{ display: 'flex' }}>
                                 {'Visit site'}
-                                <MdKeyboardArrowRight style={{ fontSize: '1.2rem' }} />
+                                <MdKeyboardArrowRight size={window.innerWidth >= 550 ? 20 : 25} />
                             </Styled.Typography>
                         </a>
                     </Styled.BigButton>

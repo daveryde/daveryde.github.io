@@ -24,7 +24,6 @@ const AboutSection: React.FC<IAboutSection> = ({ handleScroll }) => {
 
             <Styled.AboutContent>
                 <Styled.AboutLeft>
-
                     <Styled.Image filtered src={ProfilePastel} />
                 </Styled.AboutLeft>
 
