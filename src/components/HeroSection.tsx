@@ -1,23 +1,12 @@
-import { useEffect, useRef } from 'react';
-
-import { useLocation } from 'react-router';
-
-import { Link } from 'react-router-dom';
-
 import * as Styled from './styles';
 
-const HeroSection = () => {
-    const { hash } = useLocation();
-    const sectionRef = useRef<HTMLElement | null>(null);
+interface IHeroSection {
+    handleScroll: (sectionRefIndex: number) => void;
+}
 
-    useEffect(() => {
-        if (hash === '') {
-            sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
-        }
-    }, [hash]);
-
+const HeroSection: React.FC<IHeroSection> = ({ handleScroll }) => {
     return (
-        <Styled.HeroContainer ref={sectionRef}>
+        <Styled.HeroContainer>
             <Styled.HeroContent>
                 <Styled.Heading
                     as={'h1'}
@@ -42,13 +31,12 @@ const HeroSection = () => {
                 </Styled.Typography>
 
                 <Styled.BigButton color={Styled.ThemeColor.baseRed}>
-                    <Link to={{ hash: '#project' }}>
                         <Styled.Typography
                             color={Styled.ThemeColor.baseWhite}
-                            size={Styled.TypographySize.reg}>
+                            size={Styled.TypographySize.reg}
+                            onClick={() => handleScroll(1)}>
                             See my work
                         </Styled.Typography>
-                    </Link>
                 </Styled.BigButton>
             </Styled.HeroContent>
         </Styled.HeroContainer>

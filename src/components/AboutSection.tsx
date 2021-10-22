@@ -1,29 +1,15 @@
-import { useEffect, useRef } from 'react';
-
-import { useLocation } from 'react-router';
-
-import { Link } from 'react-router-dom';
-
 import ProfilePastel from '../assets/profile_pastel.png';
 
 import * as Styled from './styles';
 
-interface Props {
-
+interface IAboutSection {
+    handleScroll: (sectionRefIndex: number) => void;
 }
 
-const AboutSection = (props: Props) => {
-    const { hash } = useLocation();
-    const sectionRef = useRef<HTMLElement | null>(null);
-
-    useEffect(() => {
-        if (hash === '#about') {
-            sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
-        }
-    }, [hash]);
+const AboutSection: React.FC<IAboutSection> = ({ handleScroll }) => {
 
     return (
-        <Styled.AboutContainer ref={sectionRef}>
+        <Styled.AboutContainer>
             <Styled.AboutHeader>
                 <Styled.SectionTitle>
                     <Styled.Redline />{' '}About
@@ -35,7 +21,7 @@ const AboutSection = (props: Props) => {
                     Get a closer look at who I am.
                 </Styled.Heading>
             </Styled.AboutHeader>
-            
+
             <Styled.AboutContent>
                 <Styled.AboutLeft>
 
@@ -62,7 +48,7 @@ const AboutSection = (props: Props) => {
                         I am enthusiastic in my voyage through the vast and intricate digital universe to find and implement solutions that generate harmony with human interactions.
                     </Styled.Typography>
 
-                    <Styled.SectionTitle style={{ padding: '2rem 0'}}>
+                    <Styled.SectionTitle style={{ padding: '2rem 0' }}>
                         <Styled.SmallRedLine />{'Skills & Tools'}
                     </Styled.SectionTitle>
                     <Styled.Typography
@@ -96,12 +82,11 @@ const AboutSection = (props: Props) => {
                     <Styled.BigButton
                         color={Styled.ThemeColor.baseRed}
                         style={{ margin: '4rem 0' }}>
-                        <Link to={{ hash: '#connect' }}>
                             <Styled.Typography
-                                size={Styled.TypographySize.reg}>
+                                size={Styled.TypographySize.reg}
+                                onClick={() => handleScroll(3)}>
                                 Get in touch
                             </Styled.Typography>
-                        </Link>
                     </Styled.BigButton>
                 </Styled.AboutRight>
             </Styled.AboutContent>

@@ -1,6 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
-
-import { useLocation } from 'react-router';
+import { useState } from 'react';
 
 // Components
 import WorkSlider from './WorkSlider';
@@ -10,17 +8,13 @@ import { IProjectList, showcaseProjects } from '../data/WorkProjects';
 // Styles
 import * as Styled from './styles';
 
-const WorkSection = () => {
+interface IWorkSection {
+
+}
+
+const WorkSection: React.FC<IWorkSection> = () => {
     const [showcase] = useState<IProjectList[]>(showcaseProjects);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
-    const { hash } = useLocation();
-    const sectionRef = useRef<HTMLElement | null>(null);
-
-    useEffect(() => {
-        if (hash === '#project') {
-            sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
-        }
-    }, [hash]);
 
     const previousSlide = () => {
         const lastIndex = showcase.length - 1;
@@ -39,7 +33,7 @@ const WorkSection = () => {
     }
 
     return (
-        <Styled.WorkContainer ref={sectionRef}>
+        <Styled.WorkContainer>
             <Styled.WorkHeader>
                 <Styled.SectionTitle>
                     <Styled.Redline />{' '}Work

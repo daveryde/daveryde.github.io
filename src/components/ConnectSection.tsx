@@ -1,23 +1,15 @@
-import { useEffect, useRef } from 'react';
-
-import { useLocation } from 'react-router';
-
 import resume from '../assets/DavidCordovaResume.pdf';
 
 import * as Styled from './styles';
 
-const ConnectSection = () => {
-    const { hash } = useLocation();
-    const sectionRef = useRef<HTMLElement | null>(null);
+interface IConnectSection {
 
-    useEffect(() => {
-        if (hash === '#connect') {
-            sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
-        }
-    }, [hash]);
+}
+
+const ConnectSection: React.FC<IConnectSection> = () => {
 
     return (
-        <Styled.ConnectContainer ref={sectionRef}>
+        <Styled.ConnectContainer>
             <Styled.ConnectHeader>
                 <Styled.SectionTitle>
                     <Styled.Redline />{' '}Connect

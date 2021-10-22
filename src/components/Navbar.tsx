@@ -1,4 +1,3 @@
-import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 
 import { BiHomeAlt, BiUser } from 'react-icons/bi';
@@ -7,34 +6,42 @@ import { HiOutlineMail } from "react-icons/hi";
 
 import * as Styled from './styles';
 
-const Navbar = () => {
-    const location = useLocation();
+import { Scrollspy } from "@makotot/ghostui";
+
+interface INavbarProps {
+    sectionRefs: React.RefObject<HTMLElement>[];
+    handleScroll: (sectionRefIndex: number) => void;
+}
+
+const Navbar: React.FC<INavbarProps> = ({ sectionRefs, handleScroll }) => {
+
     return (
         <>
             <Styled.MobileNav>
-                <Styled.BottomTab active={location.hash === '' && true}>
-                    <Link to={{ hash: '' }}>
-                        <BiHomeAlt />
-                    </Link>
-                </Styled.BottomTab>
-                <Styled.BottomTab active={location.hash === '#project' && true}>
-                    <Link to={{ hash: 'project' }}>
-                        <FiBriefcase />
-                    </Link>
-                </Styled.BottomTab>
-                <Styled.BottomTab active={location.hash === '#about' && true}>
-                    <Link to={{ hash: 'about' }}>
-                        <BiUser />
-                    </Link>
-                </Styled.BottomTab>
-                <Styled.BottomTab active={location.hash === '#connect' && true}>
-                    <Link to={{ hash: 'connect' }}>
-                        <HiOutlineMail />
-                    </Link>
-                </Styled.BottomTab>
+                <Scrollspy sectionRefs={sectionRefs}>
+                    {({ currentElementIndexInViewport }) => {
+                        return (
+                            <>
+                                <Styled.BottomTab onClick={() => handleScroll(0)} active={currentElementIndexInViewport === 0 && true}>
+                                    <BiHomeAlt />
+                                </Styled.BottomTab>
+                                <Styled.BottomTab onClick={() => handleScroll(1)} active={currentElementIndexInViewport === 1 && true}>
+                                    <FiBriefcase />
+                                </Styled.BottomTab>
+                                <Styled.BottomTab onClick={() => handleScroll(2)} active={currentElementIndexInViewport === 2 && true}>
+                                    <BiUser />
+                                </Styled.BottomTab>
+                                <Styled.BottomTab onClick={() => handleScroll(3)} active={currentElementIndexInViewport === 3 && true}>
+                                    <HiOutlineMail />
+                                </Styled.BottomTab>
+                            </>
+                        )
+                    }
+                    }
+                </Scrollspy>
             </Styled.MobileNav>
 
-            <Styled.DesktopNav style={{}}>
+            <Styled.DesktopNav>
                 <Styled.NavbarLeft>
                     <Styled.NavbarItem>
                         <Link to={{ hash: '' }}>
@@ -44,32 +51,35 @@ const Navbar = () => {
                 </Styled.NavbarLeft>
 
                 <Styled.NavbarRight>
-                    <Styled.NavbarTab>
-                        <Styled.Bubble active={location.hash === '#project' && true} />
-                        <Styled.NavbarItem>
-                            <Link to={{ hash: 'project' }}>
-                                {'Work'}
-                            </Link>
-                        </Styled.NavbarItem>
-                    </Styled.NavbarTab>
+                    <Scrollspy sectionRefs={sectionRefs}>
+                        {({ currentElementIndexInViewport }) => {
+                            return (
+                                <>
+                                    <Styled.NavbarTab>
+                                        <Styled.Bubble active={currentElementIndexInViewport === 1 && true} />
+                                        <Styled.NavbarItem onClick={() => handleScroll(1)}>
+                                            {'Work'}
+                                        </Styled.NavbarItem>
+                                    </Styled.NavbarTab>
 
-                    <Styled.NavbarTab>
-                        <Styled.Bubble active={location.hash === '#about' && true} />
-                        <Styled.NavbarItem>
-                            <Link to={{ hash: 'about' }}>
-                                {'About'}
-                            </Link>
-                        </Styled.NavbarItem>
-                    </Styled.NavbarTab>
+                                    <Styled.NavbarTab>
+                                        <Styled.Bubble active={currentElementIndexInViewport === 2 && true} />
+                                        <Styled.NavbarItem onClick={() => handleScroll(2)}>
+                                            {'About'}
+                                        </Styled.NavbarItem>
+                                    </Styled.NavbarTab>
 
-                    <Styled.NavbarTab>
-                        <Styled.Bubble active={location.hash === '#connect' && true} />
-                        <Styled.NavbarItem>
-                            <Link to={{ hash: 'connect' }}>
-                                {'Contact'}
-                            </Link>
-                        </Styled.NavbarItem>
-                    </Styled.NavbarTab>
+                                    <Styled.NavbarTab>
+                                        <Styled.Bubble active={currentElementIndexInViewport === 3 && true} />
+                                        <Styled.NavbarItem onClick={() => handleScroll(3)}>
+                                            {'Contact'}
+                                        </Styled.NavbarItem>
+                                    </Styled.NavbarTab>
+                                </>
+                            )
+                        }
+                        }
+                    </Scrollspy>
                 </Styled.NavbarRight>
             </Styled.DesktopNav>
         </>
