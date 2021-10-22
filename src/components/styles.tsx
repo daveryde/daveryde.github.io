@@ -393,13 +393,13 @@ export const WorkLink = styled.div`
     padding-bottom: 5rem;
 `;
 
-export const Image = styled.img.attrs((p: { filter: boolean }) => ({
-    filter: p.filter
+export const Image = styled.img.attrs((p: { filtered: boolean }) => ({
+    filtered: p.filtered
 }))`
     width: 100%;
     padding: 0 0 3rem 0;
     object-fit: contain;
-    ${p => p.filter &&
+    ${p => p.filtered &&
         css`
         filter: contrast(200%) brightness(75%) saturate(1);
         `
