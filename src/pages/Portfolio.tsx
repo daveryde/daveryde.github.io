@@ -7,6 +7,8 @@ import HeroSection from '../components/HeroSection';
 import Navbar from '../components/Navbar';
 import WorkSection from '../components/WorkSection';
 
+import { navigationClickEventGA } from "../utils/analytics";
+
 const Portfolio = () => {
     const sectionRefs = [
         useRef<HTMLElement | null>(null),
@@ -16,6 +18,7 @@ const Portfolio = () => {
     ];
 
     const handleScroll = (sectionRefIndex: number) => {
+        navigationClickEventGA(sectionRefs[sectionRefIndex].current?.id!);
         sectionRefs[sectionRefIndex].current?.scrollIntoView({ behavior: 'smooth' });
     }
 
@@ -25,16 +28,16 @@ const Portfolio = () => {
                 sectionRefs={sectionRefs}
                 handleScroll={handleScroll} />
             <main>
-                <section ref={sectionRefs[0]}>
+                <section ref={sectionRefs[0]} id="hero">
                     <HeroSection handleScroll={handleScroll} />
                 </section>
-                <section ref={sectionRefs[1]}>
+                <section ref={sectionRefs[1]} id="work">
                     <WorkSection />
                 </section>
-                <section ref={sectionRefs[2]}>
+                <section ref={sectionRefs[2]} id="about">
                     <AboutSection handleScroll={handleScroll} />
                 </section>
-                <section ref={sectionRefs[3]}>
+                <section ref={sectionRefs[3]} id="connect">
                     <ConnectSection />
                 </section>
             </main>
