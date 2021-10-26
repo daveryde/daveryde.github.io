@@ -18,7 +18,7 @@ const ConnectSection: React.FC<IConnectSection> = () => {
                 <Styled.Heading
                     as={'h1'}
                     size={Styled.HeadingSize.h1}>
-                    Interested in working with me or perhaps just talk?
+                    Interested in working with me or perhaps just to talk?
                 </Styled.Heading>
             </Styled.ConnectHeader>
 

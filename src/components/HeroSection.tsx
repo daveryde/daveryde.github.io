@@ -11,7 +11,7 @@ const HeroSection: React.FC<IHeroSection> = ({ handleScroll }) => {
                 <Styled.Heading
                     as={'h1'}
                     size={Styled.HeadingSize.h1}>
-                    Hey, Im <Styled.RedSpan>David</Styled.RedSpan>
+                    Hey, I'm <Styled.RedSpan>David</Styled.RedSpan>
                 </Styled.Heading>
                 <Styled.Heading
                     as={'h2'}
