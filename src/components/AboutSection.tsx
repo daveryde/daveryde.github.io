@@ -61,14 +61,14 @@ const AboutSection: React.FC<IAboutSection> = ({ handleScroll }) => {
                         size={Styled.TypographySize.reg}
                         color={Styled.ThemeColor.baseLightGrey}
                         spaced>
-                        Frontend Development: JavaScript (ES6), React, Next.js, Ionic, HTML, CSS/SCSS, Styled Components
+                        Frontend Development: JavaScript (ES6), React, Next.js, Ionic, HTML, CSS/SCSS, Styled Components, GraphQL
                     </Styled.Typography>
 
                     <Styled.Typography
                         size={Styled.TypographySize.reg}
                         color={Styled.ThemeColor.baseLightGrey}
                         spaced>
-                        Backend Development: Python, Django, Bottle, Node.js, Express.js
+                        Backend Development: Python, Django, Bottle, Node.js, Express.js, Postgres, MongoDB, DynamoDB
                     </Styled.Typography>
 
                     <Styled.Typography
